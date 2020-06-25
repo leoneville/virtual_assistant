@@ -11,7 +11,7 @@ class Chatbot():
             memoria = open(nome+'.json','r')
         except FileNotFoundError:
             memoria = open(nome+'.json','w')
-            memoria.write('[["Neville", "neville"],{"Olá": "Olá, qual o seu nome?", "tchau": "Até mais :]"}]')
+            memoria.write('[["Neville", "neville"],{"Oi": "Olá, qual o seu nome?", "tchau": "Até mais :]"}]')
             memoria.close()
             memoria = open(nome+'.json','r')
         self.nome = nome
